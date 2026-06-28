@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-spartan-bg:      #050505;
+  --color-spartan-purple:  #8B5CF6;
+  --color-spartan-magenta: #D946EF;
+  --color-spartan-white:   #FFFFFF;
+  --color-spartan-gray:    #A1A1AA;
+  --color-spartan-card:    #0F0F0F;
+  --color-spartan-border:  #1A1A2E;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-4px); }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #050505;
+  color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* ══ Scrollbar ══ */
+::-webkit-scrollbar       { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #8B5CF6, #D946EF); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #A855F7; }
+* { scrollbar-width: thin; scrollbar-color: #8B5CF6 transparent; }
+
+::selection { background: rgba(139,92,246,0.3); color: #fff; }
