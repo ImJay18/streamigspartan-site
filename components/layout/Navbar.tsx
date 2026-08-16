@@ -120,16 +120,7 @@ export default function Navbar() {
 
           {/* ── Right CTAs ── */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }} className="hidden-mobile">
-            {/* Theme toggle — circular dark button */}
-            <div style={{
-              width: 38, height: 38,
-              borderRadius: '50%',
-              background: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.12)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <ThemeToggle compact />
-            </div>
+            <ThemeToggle compact />
 
             {/* Cart — matches image: outlined purple border */}
             <CartNavButton scrolled={true} />
@@ -207,17 +198,7 @@ export default function Navbar() {
               <div style={{ flex: 1 }}>
                 <CartNavButton scrolled={true} />
               </div>
-              {/* Theme toggle */}
-              <div style={{
-                width: 44, height: 44,
-                borderRadius: 10,
-                background: 'rgba(255,255,255,0.06)',
-                border: '1px solid rgba(255,255,255,0.12)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                flexShrink: 0,
-              }}>
-                <ThemeToggle compact />
-              </div>
+              <ThemeToggle compact />
             </div>
 
             {/* WhatsApp */}
